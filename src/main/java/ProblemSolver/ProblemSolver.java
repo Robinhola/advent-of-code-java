@@ -3,8 +3,10 @@ package ProblemSolver;
 import ProblemSolver.util.Display;
 import ProblemSolver.util.Solver;
 
+import java.util.stream.IntStream;
+
 public class ProblemSolver {
   public static void main(String[] args) {
-    Display.print(Solver.choose(1));
+    IntStream.rangeClosed(1, 2).mapToObj(Solver::choose).forEach(Display::print);
   }
 }

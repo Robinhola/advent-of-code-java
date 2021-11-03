@@ -5,7 +5,6 @@ import ProblemSolver.util.Solution;
 import java.util.ArrayList;
 
 public interface Day<T> {
-
   default Solution solve() {
     ArrayList<T> data = getData();
     return new Solution(partOne(data), partTwo(data));
